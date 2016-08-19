@@ -1,0 +1,5 @@
+D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\bin\Debug\Entidades.dll
+D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\bin\Debug\Entidades.pdb
+D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\obj\Debug\Entidades.dll
+D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\obj\Debug\Entidades.pdb
