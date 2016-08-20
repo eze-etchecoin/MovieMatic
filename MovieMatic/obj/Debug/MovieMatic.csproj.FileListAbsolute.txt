@@ -19,3 +19,6 @@ D:\Documentos\Visual Studio 2015\Projects\MovieMatic\MovieMatic\obj\Debug\MovieM
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\MovieMatic\bin\Debug\Newtonsoft.Json.dll
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\MovieMatic\bin\Debug\Newtonsoft.Json.pdb
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\MovieMatic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\bin\Debug\MovieMatic.exe.config
+C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.exe
+C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.pdb
