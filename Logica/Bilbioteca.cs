@@ -30,13 +30,13 @@ namespace Logica
             }
         }
 
-        public IOrderedEnumerable<Pelicula> BuscarPeliculaPorNombre(string nombre)
+        public IOrderedEnumerable<Pelicula> ObtenerPeliculasPorNombre(string nombre)
         {
             nombre.ToLower();
 
             var pelisObtenidas =
                                     from peliActual in _peliteca
-                                    where peliActual.Nombre.ToLower().Equals(nombre)
+                                    where peliActual.Nombre.ToLower().Contains(nombre)
                                     orderby peliActual.Nombre
                                     select peliActual;
 
@@ -73,13 +73,13 @@ namespace Logica
             return listaGeneros;
         }
 
-        public IOrderedEnumerable<Pelicula> BuscarPeliculaPorGenero(string genero)
+        public IOrderedEnumerable<Pelicula> ObtenerPeliculasPorGenero(string genero)
         {
             genero.ToLower();
 
             var pelisObtenidas =
                                     from peliActual in _peliteca
-                                    where peliActual.Genero.ToLower().Equals(genero)
+                                    where peliActual.Genero.ToLower().Contains(genero)
                                     orderby peliActual.Genero
                                     select peliActual;
 
@@ -102,44 +102,52 @@ namespace Logica
             return listaAnios;
         }
         
-        public Pelicula BuscarPeliculaPorAnio(int anio)
+        public IEnumerable<Pelicula> BuscarPeliculasPorAnio(int anio)
         {
-            
-            foreach (Pelicula peliactual in _peliteca)
+            List<Pelicula> pelisEncontradas = new List<Pelicula>();
+
+            foreach (Pelicula peliActual in _peliteca)
             {
-                if (peliactual.AnioEstreno.Equals(anio))
+                if (peliActual.AnioEstreno == anio)
                 {
-                    return peliactual;
+                    pelisEncontradas.Add(peliActual);
                 }
             }
 
-            return null;
+            return pelisEncontradas;
+            
         }
 
-        public IOrderedEnumerable<Pelicula> BuscarPeliculaPorDirector(string director)
+        public IOrderedEnumerable<Pelicula> BuscarPeliculasPorDirector(string director)
         {
             director.ToLower();
 
             var pelisObtenidas =
                                     from peliActual in _peliteca
-                                    where peliActual.Director.ToLower().Equals(director)
-                                    orderby peliActual.Director
+                                    where peliActual.Director.ToLower().Contains(director)
+                                    orderby peliActual.Nombre
                                     select peliActual;
 
             return pelisObtenidas;
         }
 
-        public List<Pelicula> BuscarPeliculaPorActor(string nombreActor)
+        public List<Pelicula> BuscarPeliculasPorActor(string nombreActor)
         {
             foreach (var actor in _actores)
             {
-                if (actor.NombreApellido.Equals(nombreActor))
+                if (actor.NombreApellido.Contains(nombreActor))
                 {
                     return actor.Filmografia;
                 }
             }
 
             return null;
+        }
+
+        public void EliminarPelicula(Pelicula peliADestruir)
+        {
+            int puntero = _peliteca.IndexOf(peliADestruir);
+            _peliteca.RemoveAt(puntero);
         }
     }
 }
