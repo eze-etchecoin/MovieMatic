@@ -4,22 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MovieMatic"
-        xmlns:Entidades="clr-namespace:Entidades;assembly=Entidades" x:Class="MovieMatic.MainWindow"
+        xmlns:Entidades="clr-namespace:Entidades;assembly=Entidades" xmlns:Logica="clr-namespace:Logica;assembly=Logica" x:Class="MovieMatic.MainWindow"
         mc:Ignorable="d"
-        Title="MovieMatic" Height="350" Width="525" Loaded="Window_Loaded">
+        Title="MovieMatic" Height="446.052" Width="776.316" Loaded="Window_Loaded">
     <Window.Resources>
         <CollectionViewSource x:Key="peliculaViewSource" d:DesignSource="{d:DesignInstance {x:Type Entidades:Pelicula}, CreateList=True}"/>
+        <CollectionViewSource x:Key="bilbiotecaViewSource" d:DesignSource="{d:DesignInstance {x:Type Logica:Bilbioteca}, CreateList=True}"/>
     </Window.Resources>
-    <Grid RenderTransformOrigin="0.505,0.492" DataContext="{StaticResource peliculaViewSource}">
+    <Grid RenderTransformOrigin="0.407,0.489" DataContext="{StaticResource peliculaViewSource}" Margin="0,-24,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="264*"/>
-            <ColumnDefinition Width="252*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="Ver Biblioteca" Grid.Column="1" HorizontalAlignment="Left" Margin="35,142,0,0" VerticalAlignment="Top" Width="104" Click="button_Click" Height="38"/>
-        <Button x:Name="button1" Content="Buscar Pelicula" Grid.Column="1" HorizontalAlignment="Left" Margin="35,194,0,0" VerticalAlignment="Top" Width="104" Height="39"/>
-        <Button x:Name="button2" Content="Agregar Pelicula " Grid.Column="1" HorizontalAlignment="Left" Margin="35,249,0,0" VerticalAlignment="Top" Width="104" Height="40"/>
-        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Grid.Column="2" Margin="125,249,0,0" Height="40"/>
+        <Button x:Name="button" Content="Eliminar Película" HorizontalAlignment="Left" Margin="11,162,0,0" VerticalAlignment="Top" Width="104" Click="button_Click" Height="38"/>
+        <Button x:Name="button1" Content="Buscar Película" HorizontalAlignment="Left" Margin="11,36,0,0" VerticalAlignment="Top" Width="104" Height="39"/>
+        <Button x:Name="button2" Content="Agregar Película " HorizontalAlignment="Left" Margin="11,99,0,0" VerticalAlignment="Top" Width="104" Height="40" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="673,381,0,0" Height="40"/>
+        <Canvas>
+            <StackPanel Height="439" Width="766"/>
+        </Canvas>
 
     </Grid>
 </Window>

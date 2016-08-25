@@ -10,5 +10,7 @@ namespace Entidades
     {
         public string NombreApellido { get; set; }
         public List<Pelicula> Filmografia { get; set; }
+        
+
     }
 }

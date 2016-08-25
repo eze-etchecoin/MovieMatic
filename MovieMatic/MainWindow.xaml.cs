@@ -31,11 +31,10 @@ namespace MovieMatic
             System.Windows.Data.CollectionViewSource peliculaViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("peliculaViewSource")));
             // Cargar datos estableciendo la propiedad CollectionViewSource.Source:
             // peliculaViewSource.Source = [origen de datos genérico]
+            System.Windows.Data.CollectionViewSource bilbiotecaViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("bilbiotecaViewSource")));
+            // Cargar datos estableciendo la propiedad CollectionViewSource.Source:
+            // bilbiotecaViewSource.Source = [origen de datos genérico]
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

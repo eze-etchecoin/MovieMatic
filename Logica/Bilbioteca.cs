@@ -8,7 +8,7 @@ using Entidades;
 namespace Logica
 {
     public class Bilbioteca
-    {
+    { 
         private List<Pelicula> _peliteca = new List<Pelicula>();
         private List<Actor> _actores = new List<Actor>();
 
@@ -133,21 +133,46 @@ namespace Logica
 
         public List<Pelicula> BuscarPeliculasPorActor(string nombreActor)
         {
+            var pelisEncontradas = new List<Pelicula>();
+
             foreach (var actor in _actores)
             {
                 if (actor.NombreApellido.Contains(nombreActor))
                 {
-                    return actor.Filmografia;
+                    pelisEncontradas.AddRange(actor.Filmografia);
                 }
             }
 
-            return null;
+            return pelisEncontradas;
         }
 
         public void EliminarPelicula(Pelicula peliADestruir)
         {
-            int puntero = _peliteca.IndexOf(peliADestruir);
-            _peliteca.RemoveAt(puntero);
+            _peliteca.Remove(peliADestruir);
+
+            foreach (var actor in _actores)
+            {
+                foreach (var peli in actor.Filmografia)
+                {
+                    if (peli.Equals(peliADestruir))
+                    {
+                        actor.Filmografia.Remove(peli);
+                    }
+                }
+
+                if(actor.Filmografia.Count == 0)
+                {
+                    _actores.Remove(actor);
+                }
+            }
+            
+
+        }
+
+        public List<Pelicula> ObtenerPelis()
+        {
+            var pelisOrdenadas = _peliteca.OrderBy(peli => peli.Nombre).ToList();
+            return pelisOrdenadas;
         }
     }
 }
