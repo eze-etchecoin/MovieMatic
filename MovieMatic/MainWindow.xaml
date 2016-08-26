@@ -12,15 +12,33 @@
         <CollectionViewSource x:Key="bilbiotecaViewSource" d:DesignSource="{d:DesignInstance {x:Type Logica:Bilbioteca}, CreateList=True}"/>
     </Window.Resources>
     <Grid RenderTransformOrigin="0.407,0.489" DataContext="{StaticResource peliculaViewSource}" Margin="0,-24,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="261*"/>
+            <RowDefinition Height="178*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="Eliminar Película" HorizontalAlignment="Left" Margin="11,162,0,0" VerticalAlignment="Top" Width="104" Click="button_Click" Height="38"/>
-        <Button x:Name="button1" Content="Buscar Película" HorizontalAlignment="Left" Margin="11,36,0,0" VerticalAlignment="Top" Width="104" Height="39"/>
-        <Button x:Name="button2" Content="Agregar Película " HorizontalAlignment="Left" Margin="11,99,0,0" VerticalAlignment="Top" Width="104" Height="40" Click="button2_Click"/>
-        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="673,381,0,0" Height="40"/>
-        <Canvas>
-            <StackPanel Height="439" Width="766"/>
+        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="673,120.424,0,0" Height="40" Grid.Row="1"/>
+        <Canvas Grid.RowSpan="2">
+            <StackPanel Height="287" Width="605" Canvas.Left="136" Canvas.Top="62">
+                <DataGrid x:Name="peliculaDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="310" ItemsSource="{Binding}" Margin="10,0,-4,0" RowDetailsVisibilityMode="VisibleWhenSelected" RenderTransformOrigin="0.5,0.5">
+                    <DataGrid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-360.016"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </DataGrid.RenderTransform>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding Nombre}" Header="Nombre" Width="300"/>
+                        <DataGridTextColumn x:Name="anioEstrenoColumn" Binding="{Binding AnioEstreno}" Header="Año" Width="50"/>
+                        <DataGridTextColumn x:Name="generoColumn" Binding="{Binding Genero}" Header="Genero" Width="80"/>
+                        <DataGridTextColumn x:Name="directorColumn" Binding="{Binding Director}" Header="Director" Width="150"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
         </Canvas>
 
     </Grid>

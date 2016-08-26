@@ -8,3 +8,13 @@ D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Logica\obj\Debug\Logica.pdb
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.dll
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.pdb
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.xml
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Logica.dll
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Logica.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Entidades.dll
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Entidades.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.xml
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.dll
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.dll

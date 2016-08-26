@@ -3,3 +3,11 @@ D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\bin\Debug\Entidad
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\obj\Debug\Entidades.dll
 D:\Documentos\Visual Studio 2015\Projects\MovieMatic\Entidades\obj\Debug\Entidades.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\obj\Debug\Entidades.dll
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\obj\Debug\Entidades.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\bin\Debug\Entidades.dll
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\bin\Debug\Entidades.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\bin\Debug\Newtonsoft.Json.dll
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\eze_e\Source\Repos\MovieMatic\Entidades\bin\Debug\Newtonsoft.Json.xml
