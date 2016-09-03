@@ -9,7 +9,7 @@
         Title="MovieMatic" Height="446.052" Width="776.316" Loaded="Window_Loaded">
     <Window.Resources>
         <CollectionViewSource x:Key="peliculaViewSource" d:DesignSource="{d:DesignInstance {x:Type Entidades:Pelicula}, CreateList=True}"/>
-        <CollectionViewSource x:Key="bilbiotecaViewSource" d:DesignSource="{d:DesignInstance {x:Type Logica:Bilbioteca}, CreateList=True}"/>
+        <CollectionViewSource x:Key="bilbiotecaViewSource" d:DesignSource="{d:DesignInstance {x:Type Logica:Biblioteca}, CreateList=True}"/>
     </Window.Resources>
     <Grid RenderTransformOrigin="0.407,0.489" DataContext="{StaticResource peliculaViewSource}" Margin="0,-24,2,0">
         <Grid.RowDefinitions>
@@ -19,7 +19,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="673,120.424,0,0" Height="40" Grid.Row="1"/>
+        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="673,120.424,0,0" Height="40" Grid.Row="1" Click="button3_Click"/>
         <Canvas Grid.RowSpan="2">
             <StackPanel Height="287" Width="605" Canvas.Left="136" Canvas.Top="62">
                 <DataGrid x:Name="peliculaDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="310" ItemsSource="{Binding}" Margin="10,0,-4,0" RowDetailsVisibilityMode="VisibleWhenSelected" RenderTransformOrigin="0.5,0.5">

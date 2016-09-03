@@ -16,6 +16,9 @@ namespace Entidades
         public string Director { get; set; }
         public string Sinopsis { get; set; }
 
-
+        public Pelicula()
+        {
+            Actores = new List<Actor>();
+        }
     }
 }

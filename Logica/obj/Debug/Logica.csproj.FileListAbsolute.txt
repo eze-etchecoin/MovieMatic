@@ -18,3 +18,13 @@ C:\Users\eze_e\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.csprojResolveAsse
 C:\Users\eze_e\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.dll
 C:\Users\eze_e\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.pdb
 C:\Users\eze_e\Source\Repos\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\bin\Debug\Logica.dll
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\bin\Debug\Logica.pdb
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\bin\Debug\Entidades.dll
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\bin\Debug\Entidades.pdb
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.dll
+C:\Users\Roberto\Source\Repos\MovieMatic\Logica\obj\Debug\Logica.pdb

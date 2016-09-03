@@ -7,26 +7,32 @@ using Entidades;
 
 namespace Logica
 {
-    public class Bilbioteca
-    { 
-        private List<Pelicula> _peliteca = new List<Pelicula>();
-        private List<Actor> _actores = new List<Actor>();
+    public class Biblioteca
+    {
+        private List<Pelicula> _peliteca;
+        private List<Actor> _actores;
+
+        public Biblioteca()
+        {
+            _peliteca = new List<Pelicula>();
+            _actores = new List<Actor>();
+        }
 
         public void AgregarPelicula(Pelicula peliNueva)
         {
             _peliteca.Add(peliNueva);
 
+            
             foreach (var actorNuevo in peliNueva.Actores)
             {
-                actorNuevo.Filmografia.Add(peliNueva);
 
-                foreach (var actorEnBiblioteca in _actores)
+                if (!_actores.Any(a => a.NombreApellido == actorNuevo.NombreApellido))
                 {
-                    if (!actorEnBiblioteca.NombreApellido.Equals(actorNuevo.NombreApellido))
-                    {
-                        _actores.Add(actorNuevo);
-                    }
+                    _actores.Add(actorNuevo);
                 }
+
+
+
             }
         }
 
@@ -139,7 +145,10 @@ namespace Logica
             {
                 if (actor.NombreApellido.Contains(nombreActor))
                 {
-                    pelisEncontradas.AddRange(actor.Filmografia);
+                    foreach(var peli in _peliteca)
+                    {
+                        if (peli.Actores.Contains(actor)) pelisEncontradas.Add(peli);
+                    }
                 }
             }
 
@@ -149,30 +158,23 @@ namespace Logica
         public void EliminarPelicula(Pelicula peliADestruir)
         {
             _peliteca.Remove(peliADestruir);
-
-            foreach (var actor in _actores)
-            {
-                foreach (var peli in actor.Filmografia)
-                {
-                    if (peli.Equals(peliADestruir))
-                    {
-                        actor.Filmografia.Remove(peli);
-                    }
-                }
-
-                if(actor.Filmografia.Count == 0)
-                {
-                    _actores.Remove(actor);
-                }
-            }
             
-
         }
 
-        public List<Pelicula> ObtenerPelis()
+        public List<Pelicula> ObtenerPelisOrdenadas()
         {
             var pelisOrdenadas = _peliteca.OrderBy(peli => peli.Nombre).ToList();
             return pelisOrdenadas;
+        }
+
+        public List<Actor> ObtenerListaActores()
+        {
+            return _actores;
+        }
+
+        public List<Pelicula> ObtenerPeliteca()
+        {
+            return _peliteca;
         }
     }
 }

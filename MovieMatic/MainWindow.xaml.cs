@@ -27,6 +27,8 @@ namespace MovieMatic
             InitializeComponent();
         }
 
+        private Biblioteca _biblioteca;
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
@@ -34,7 +36,7 @@ namespace MovieMatic
             // Cargar datos estableciendo la propiedad CollectionViewSource.Source:
             // peliculaViewSource.Source = [origen de datos genérico]
 
-            var biblioteca = new Bilbioteca();
+            _biblioteca = new Biblioteca();
 
             Actor depp = new Actor();
             depp.NombreApellido = "Johnny";
@@ -47,14 +49,24 @@ namespace MovieMatic
             peli.AnioEstreno = 2011;
             peli.Genero = "Comedia";
 
-            //aca se pudrio todo :(
             peli.Actores.Add(depp);
             peli.Actores.Add(jim);
 
-            biblioteca.AgregarPelicula(peli);
+            _biblioteca.AgregarPelicula(peli);
+            
 
-            peliculaViewSource.Source = biblioteca.ObtenerPelis();
+            peliculaViewSource.Source = _biblioteca.ObtenerPelisOrdenadas();
         }
 
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            var salir = new VentanasSecundarias.SalirWindow(_biblioteca);
+            if(salir.ShowDialog() != System.Windows.Forms.DialogResult.Cancel)
+            {
+                Close();
+            }
+            
+
+        }
     }
 }
