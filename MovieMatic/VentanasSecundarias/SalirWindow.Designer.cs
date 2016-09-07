@@ -37,11 +37,12 @@
             // RespaldarSalirLabel
             // 
             this.RespaldarSalirLabel.AutoSize = true;
-            this.RespaldarSalirLabel.Location = new System.Drawing.Point(49, 24);
+            this.RespaldarSalirLabel.Location = new System.Drawing.Point(93, 26);
             this.RespaldarSalirLabel.Name = "RespaldarSalirLabel";
             this.RespaldarSalirLabel.Size = new System.Drawing.Size(142, 13);
             this.RespaldarSalirLabel.TabIndex = 0;
             this.RespaldarSalirLabel.Text = "¿Desea respaldar películas?";
+            this.RespaldarSalirLabel.Click += new System.EventHandler(this.RespaldarSalirLabel_Click);
             // 
             // SiSalirButton
             // 

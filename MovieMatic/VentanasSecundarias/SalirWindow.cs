@@ -43,5 +43,10 @@ namespace MovieMatic.VentanasSecundarias
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
+        private void RespaldarSalirLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
