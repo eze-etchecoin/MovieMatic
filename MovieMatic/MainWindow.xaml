@@ -32,13 +32,17 @@
                         </TransformGroup>
                     </DataGrid.RenderTransform>
                     <DataGrid.Columns>
-                        <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding Nombre}" Header="Nombre" Width="300"/>
+                        <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding Nombre}" Header="Nombre" Width="200"/>
                         <DataGridTextColumn x:Name="anioEstrenoColumn" Binding="{Binding AnioEstreno}" Header="Año" Width="50"/>
                         <DataGridTextColumn x:Name="generoColumn" Binding="{Binding Genero}" Header="Genero" Width="80"/>
-                        <DataGridTextColumn x:Name="directorColumn" Binding="{Binding Director}" Header="Director" Width="150"/>
+                        <DataGridTextColumn x:Name="directorColumn" Binding="{Binding Director}" Header="Director" Width="300"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>
+            <Button x:Name="AgregarPeliculaButton" Content="Agregar película" Canvas.Left="10" Canvas.Top="62" Width="105" Height="39" Cursor="None" Click="AgregarPeliculaButton_Click"/>
+            <Button x:Name="eliminarButton" Content="Eliminar" Canvas.Left="10" Canvas.Top="118" Width="105" Height="39" Click="eliminarButton_Click"/>
+            <Button x:Name="buscarButton" Content="Buscar" Canvas.Left="10" Canvas.Top="238" Width="105" Height="39"/>
+            <Button x:Name="modificarButton" Content="Modificar" Width="105" Canvas.Left="10" Canvas.Top="174" Height="39"/>
         </Canvas>
 
     </Grid>

@@ -155,15 +155,23 @@ namespace Logica
             return pelisEncontradas;
         }
 
-        public void EliminarPelicula(Pelicula peliADestruir)
+        public void EliminarPeliculaPorIndice(int indice)
         {
-            _peliteca.Remove(peliADestruir);
+            _peliteca.RemoveAt(indice);
             
+        }
+
+        public Pelicula BuscarPeliculaPorIndice(int indice)
+        {
+            return _peliteca.ElementAt(indice);
+
         }
 
         public List<Pelicula> ObtenerPelisOrdenadas()
         {
             var pelisOrdenadas = _peliteca.OrderBy(peli => peli.Nombre).ToList();
+            _peliteca.Clear();
+            _peliteca.AddRange(pelisOrdenadas);
             return pelisOrdenadas;
         }
 

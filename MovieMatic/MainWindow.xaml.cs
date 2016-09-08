@@ -38,23 +38,6 @@ namespace MovieMatic
 
             _biblioteca = new Biblioteca();
 
-            Actor depp = new Actor();
-            depp.NombreApellido = "Johnny";
-
-            Actor jim = new Actor();
-            jim.NombreApellido = "Carrey";
-
-            Pelicula peli = new Pelicula();
-            peli.Nombre = "El mejor día de tu vida";
-            peli.AnioEstreno = 2011;
-            peli.Genero = "Comedia";
-
-            peli.Actores.Add(depp);
-            peli.Actores.Add(jim);
-
-            _biblioteca.AgregarPelicula(peli);
-            
-
             peliculaViewSource.Source = _biblioteca.ObtenerPelisOrdenadas();
         }
 
@@ -66,6 +49,29 @@ namespace MovieMatic
                 Close();
             }
             
+
+        }
+
+        private void AgregarPeliculaButton_Click(object sender, RoutedEventArgs e)
+        {
+            var agregarPeli = new VentanasSecundarias.AgregarPeliculaWindow(_biblioteca);
+            agregarPeli.ShowDialog();
+
+            System.Windows.Data.CollectionViewSource peliculaViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("peliculaViewSource")));
+            peliculaViewSource.Source = _biblioteca.ObtenerPelisOrdenadas();
+        }
+    
+        private void eliminarButton_Click(object sender, RoutedEventArgs e)
+        {
+            _biblioteca.EliminarPeliculaPorIndice(peliculaDataGrid.SelectedIndex);
+
+            System.Windows.Data.CollectionViewSource peliculaViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("peliculaViewSource")));
+            peliculaViewSource.Source = _biblioteca.ObtenerPelisOrdenadas();
+
+        }
+
+        private void modificarButton_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

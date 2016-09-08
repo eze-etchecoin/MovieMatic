@@ -9,11 +9,10 @@ namespace Entidades
     public class Actor
     {
         public string NombreApellido { get; set; }
-        //public List<Pelicula> Filmografia { get; set; }
 
-        /*public Actor()
+        public override string ToString()
         {
-            Filmografia = new List<Pelicula>();
-        }*/
+            return NombreApellido;
+        }
     }
 }

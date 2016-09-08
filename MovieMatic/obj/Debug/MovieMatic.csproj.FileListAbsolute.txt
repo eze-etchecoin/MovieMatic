@@ -62,3 +62,4 @@ C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.g.resou
 C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.Properties.Resources.resources
 C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.csproj.GenerateResource.Cache
 C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.VentanasSecundarias.SalirWindow.resources
+C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.VentanasSecundarias.AgregarPeliculaWindow.resources
