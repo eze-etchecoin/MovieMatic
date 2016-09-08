@@ -28,73 +28,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.RespaldarSalirLabel = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalirWindow));
             this.SiSalirButton = new System.Windows.Forms.Button();
             this.NoSalirButton = new System.Windows.Forms.Button();
             this.CancelarSalirButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // RespaldarSalirLabel
-            // 
-            this.RespaldarSalirLabel.AutoSize = true;
-            this.RespaldarSalirLabel.Location = new System.Drawing.Point(93, 26);
-            this.RespaldarSalirLabel.Name = "RespaldarSalirLabel";
-            this.RespaldarSalirLabel.Size = new System.Drawing.Size(142, 13);
-            this.RespaldarSalirLabel.TabIndex = 0;
-            this.RespaldarSalirLabel.Text = "¿Desea respaldar películas?";
-            this.RespaldarSalirLabel.Click += new System.EventHandler(this.RespaldarSalirLabel_Click);
             // 
             // SiSalirButton
             // 
-            this.SiSalirButton.Location = new System.Drawing.Point(31, 61);
+            this.SiSalirButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SiSalirButton.Font = new System.Drawing.Font("Elephant", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SiSalirButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.SiSalirButton.Location = new System.Drawing.Point(46, 94);
+            this.SiSalirButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SiSalirButton.Name = "SiSalirButton";
-            this.SiSalirButton.Size = new System.Drawing.Size(75, 23);
+            this.SiSalirButton.Size = new System.Drawing.Size(112, 35);
             this.SiSalirButton.TabIndex = 1;
             this.SiSalirButton.Text = "SI";
-            this.SiSalirButton.UseVisualStyleBackColor = true;
+            this.SiSalirButton.UseVisualStyleBackColor = false;
             this.SiSalirButton.Click += new System.EventHandler(this.SiSalirButton_Click);
             // 
             // NoSalirButton
             // 
-            this.NoSalirButton.Location = new System.Drawing.Point(133, 61);
+            this.NoSalirButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NoSalirButton.Font = new System.Drawing.Font("Elephant", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoSalirButton.ForeColor = System.Drawing.Color.Red;
+            this.NoSalirButton.Location = new System.Drawing.Point(200, 94);
+            this.NoSalirButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NoSalirButton.Name = "NoSalirButton";
-            this.NoSalirButton.Size = new System.Drawing.Size(75, 23);
+            this.NoSalirButton.Size = new System.Drawing.Size(112, 35);
             this.NoSalirButton.TabIndex = 2;
             this.NoSalirButton.Text = "NO";
-            this.NoSalirButton.UseVisualStyleBackColor = true;
+            this.NoSalirButton.UseVisualStyleBackColor = false;
             this.NoSalirButton.Click += new System.EventHandler(this.NoSalirButton_Click);
             // 
             // CancelarSalirButton
             // 
-            this.CancelarSalirButton.Location = new System.Drawing.Point(236, 61);
+            this.CancelarSalirButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CancelarSalirButton.Font = new System.Drawing.Font("Elephant", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelarSalirButton.ForeColor = System.Drawing.Color.Coral;
+            this.CancelarSalirButton.Location = new System.Drawing.Point(354, 94);
+            this.CancelarSalirButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CancelarSalirButton.Name = "CancelarSalirButton";
-            this.CancelarSalirButton.Size = new System.Drawing.Size(75, 23);
+            this.CancelarSalirButton.Size = new System.Drawing.Size(112, 35);
             this.CancelarSalirButton.TabIndex = 3;
             this.CancelarSalirButton.Text = "Cancelar";
-            this.CancelarSalirButton.UseVisualStyleBackColor = true;
+            this.CancelarSalirButton.UseVisualStyleBackColor = false;
             this.CancelarSalirButton.Click += new System.EventHandler(this.CancelarSalirButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Coral;
+            this.label1.Font = new System.Drawing.Font("Engravers MT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(75, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(382, 19);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "¿Desea guardar los cambios?";
             // 
             // SalirWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 103);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(537, 158);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelarSalirButton);
             this.Controls.Add(this.NoSalirButton);
             this.Controls.Add(this.SiSalirButton);
-            this.Controls.Add(this.RespaldarSalirLabel);
+            this.ImeMode = System.Windows.Forms.ImeMode.Katakana;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SalirWindow";
-            this.Text = "SalirWindow";
+            this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label RespaldarSalirLabel;
         private System.Windows.Forms.Button SiSalirButton;
         private System.Windows.Forms.Button NoSalirButton;
         private System.Windows.Forms.Button CancelarSalirButton;
+        private System.Windows.Forms.Label label1;
     }
 }

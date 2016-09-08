@@ -63,3 +63,12 @@ C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.Propert
 C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.csproj.GenerateResource.Cache
 C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.VentanasSecundarias.SalirWindow.resources
 C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.VentanasSecundarias.AgregarPeliculaWindow.resources
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\bin\Debug\MovieMatic.exe.config
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MovieMatic.exe
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MovieMatic.pdb
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MovieMatic.csprojResolveAssemblyReference.cache
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MainWindow.g.cs
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\VentanasSecundarias\BuscarPeliculaWindow.g.cs
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\App.g.cs
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MovieMatic_MarkupCompile.cache
+C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MovieMatic_MarkupCompile.lref

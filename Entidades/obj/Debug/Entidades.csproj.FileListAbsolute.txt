@@ -19,3 +19,10 @@ C:\Users\Roberto\Source\Repos\MovieMatic\Entidades\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Roberto\Source\Repos\MovieMatic\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Roberto\Source\Repos\MovieMatic\Entidades\obj\Debug\Entidades.dll
 C:\Users\Roberto\Source\Repos\MovieMatic\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Nb007\Source\Repos\MovieMatic2\Entidades\bin\Debug\Entidades.dll
+C:\Users\Nb007\Source\Repos\MovieMatic2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Nb007\Source\Repos\MovieMatic2\Entidades\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Nb007\Source\Repos\MovieMatic2\Entidades\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nb007\Source\Repos\MovieMatic2\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Nb007\Source\Repos\MovieMatic2\Entidades\obj\Debug\Entidades.dll
+C:\Users\Nb007\Source\Repos\MovieMatic2\Entidades\obj\Debug\Entidades.pdb

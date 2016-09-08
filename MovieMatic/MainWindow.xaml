@@ -6,29 +6,55 @@
         xmlns:local="clr-namespace:MovieMatic"
         xmlns:Entidades="clr-namespace:Entidades;assembly=Entidades" xmlns:Logica="clr-namespace:Logica;assembly=Logica" x:Class="MovieMatic.MainWindow"
         mc:Ignorable="d"
-        Title="MovieMatic" Height="446.052" Width="776.316" Loaded="Window_Loaded">
+        Title="MovieMatic" Height="483.588" Width="937.721" Loaded="Window_Loaded">
     <Window.Resources>
         <CollectionViewSource x:Key="peliculaViewSource" d:DesignSource="{d:DesignInstance {x:Type Entidades:Pelicula}, CreateList=True}"/>
         <CollectionViewSource x:Key="bilbiotecaViewSource" d:DesignSource="{d:DesignInstance {x:Type Logica:Biblioteca}, CreateList=True}"/>
     </Window.Resources>
-    <Grid RenderTransformOrigin="0.407,0.489" DataContext="{StaticResource peliculaViewSource}" Margin="0,-24,2,0">
+    <Grid x:Name="FENIX_MOVIE_TEC" RenderTransformOrigin="0.407,0.489" DataContext="{StaticResource peliculaViewSource}" Margin="0,-24,2,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Recursos Visuales/IMG_20160907_214140.JPG"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="261*"/>
-            <RowDefinition Height="178*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="673,120.424,0,0" Height="40" Grid.Row="1" Click="button3_Click"/>
-        <Canvas Grid.RowSpan="2">
+        <Button x:Name="button3" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="739,412,0,0" Height="56" Click="button3_Click" FontFamily="Engravers MT" TextOptions.TextFormattingMode="Display" Foreground="#FFF1852C">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFE54C12" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Canvas x:Name="FENIX" Margin="111,40,-129.667,-40" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Canvas.Background>
+                <ImageBrush Stretch="None"/>
+            </Canvas.Background>
             <StackPanel Height="287" Width="605" Canvas.Left="136" Canvas.Top="62">
-                <DataGrid x:Name="peliculaDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="310" ItemsSource="{Binding}" Margin="10,0,-4,0" RowDetailsVisibilityMode="VisibleWhenSelected" RenderTransformOrigin="0.5,0.5">
+                <DataGrid x:Name="peliculaDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" Height="310" ItemsSource="{Binding}" Margin="10,0,-3.667,0" RowDetailsVisibilityMode="VisibleWhenSelected" RenderTransformOrigin="0.5,0.5" FontFamily="Elephant" FontSize="16">
+                    <DataGrid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FFE54C12" Offset="1"/>
+                        </LinearGradientBrush>
+                    </DataGrid.Background>
                     <DataGrid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
-                            <SkewTransform/>
+                            <SkewTransform AngleX="-0.228"/>
                             <RotateTransform Angle="-360.016"/>
-                            <TranslateTransform/>
+                            <TranslateTransform X="-0.616"/>
                         </TransformGroup>
                     </DataGrid.RenderTransform>
                     <DataGrid.Columns>
@@ -39,11 +65,53 @@
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>
-            <Button x:Name="AgregarPeliculaButton" Content="Agregar película" Canvas.Left="10" Canvas.Top="62" Width="105" Height="39" Cursor="None" Click="AgregarPeliculaButton_Click"/>
-            <Button x:Name="eliminarButton" Content="Eliminar" Canvas.Left="10" Canvas.Top="118" Width="105" Height="39" Click="eliminarButton_Click"/>
-            <Button x:Name="buscarButton" Content="Buscar" Canvas.Left="10" Canvas.Top="238" Width="105" Height="39"/>
-            <Button x:Name="modificarButton" Content="Modificar" Width="105" Canvas.Left="10" Canvas.Top="174" Height="39"/>
+            <Button x:Name="AgregarPeliculaButton" Content="Agregar película" Canvas.Left="-86" Canvas.Top="62" Width="177" Height="64" Cursor="None" Click="AgregarPeliculaButton_Click" Foreground="#FFF1852C" FontFamily="Engravers MT">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFE54C12" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="eliminarButton" Content="Eliminar" Canvas.Left="-86" Canvas.Top="154" Width="177" Height="59" Click="eliminarButton_Click" FontFamily="Engravers MT" Foreground="#FFF1852C">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFE54C12" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="buscarButton" Content="Buscar" Canvas.Left="-86" Canvas.Top="342" Width="177" Height="58" Click="buscarButton_Click" Foreground="#FFF1852C" FontFamily="Engravers MT">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFE54C12" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="modificarButton" Content="Modificar" Width="182" Canvas.Left="-91" Canvas.Top="244" Height="64" Foreground="#FFF1852C" FontFamily="Engravers MT">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFE54C12" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </Canvas>
+        <Label x:Name="label" Content="FENIX MOVIE-MATIC" HorizontalAlignment="Left" Margin="231,10,0,0" VerticalAlignment="Top" Foreground="#FFF24B0D" FontFamily="Stencil" FontSize="48" Height="63" Width="453">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.168"/>
+                    <GradientStop Color="#FFDB4218" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.052"/>
+                    <GradientStop Color="#FFDB4218" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+        </Label>
 
     </Grid>
 </Window>

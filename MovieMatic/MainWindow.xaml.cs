@@ -74,5 +74,10 @@ namespace MovieMatic
         {
 
         }
+
+        private void buscarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
