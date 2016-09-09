@@ -72,3 +72,6 @@ C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\VentanasSecundarias
 C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\App.g.cs
 C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MovieMatic_MarkupCompile.cache
 C:\Users\Nb007\Source\Repos\MovieMatic2\MovieMatic\obj\Debug\MovieMatic_MarkupCompile.lref
+C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\VentanasSecundarias\BuscarPeliculaWindow.g.cs
+C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\VentanasSecundarias\BuscarPeliculaWindow.baml
+C:\Users\Roberto\Source\Repos\MovieMatic\MovieMatic\obj\Debug\MovieMatic.VentanasSecundarias.ResultadosBusquedaWindow.resources

@@ -70,6 +70,12 @@
     <Compile Include="VentanasSecundarias\BuscarPeliculaWindow.xaml.cs">
       <DependentUpon>BuscarPeliculaWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VentanasSecundarias\ResultadosBusquedaWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanasSecundarias\ResultadosBusquedaWindow.Designer.cs">
+      <DependentUpon>ResultadosBusquedaWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanasSecundarias\SalirWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VentanasSecundarias\AgregarPeliculaWindow.resx">
       <DependentUpon>AgregarPeliculaWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanasSecundarias\ResultadosBusquedaWindow.resx">
+      <DependentUpon>ResultadosBusquedaWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanasSecundarias\SalirWindow.resx">
       <DependentUpon>SalirWindow.cs</DependentUpon>

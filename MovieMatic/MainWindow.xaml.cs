@@ -77,7 +77,8 @@ namespace MovieMatic
 
         private void buscarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var abrirBuscar = new VentanasSecundarias.BuscarPeliculaWindow(_biblioteca);
+            abrirBuscar.ShowDialog();
         }
     }
 }

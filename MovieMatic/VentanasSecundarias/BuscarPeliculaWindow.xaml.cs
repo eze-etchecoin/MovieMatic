@@ -22,8 +22,7 @@ namespace MovieMatic.VentanasSecundarias
     public partial class BuscarPeliculaWindow : Window
     {
         Biblioteca _biblioteca;
-        List<Pelicula> _pelisEncontradas = new List<Pelicula>();
-        Pelicula _peliABuscar = new Pelicula();
+        int _botonElegido;
 
         public BuscarPeliculaWindow(Biblioteca biblio)
         {
@@ -31,30 +30,35 @@ namespace MovieMatic.VentanasSecundarias
             InitializeComponent();
         }
 
-        public List<Pelicula> BuscarPorNombreButton_Click(object sender, RoutedEventArgs e)
+        public void BuscarPorNombreButton_Click(object sender, RoutedEventArgs e)
         {
-            _peliABuscar.Nombre = nombrePeliABuscarTextBox.Text;
+            _botonElegido = 1;
+            var abrirResultados = new VentanasSecundarias.ResultadosBusquedaWindow(_biblioteca, _botonElegido);
+            abrirResultados.ShowDialog();
+
+             
+            /*_peliABuscar.Nombre = nombrePeliABuscarTextBox.Text;
             
             _pelisEncontradas =_biblioteca.ObtenerPeliculasPorNombre(Convert.ToString(_peliABuscar));
 
-            return _pelisEncontradas;
+            return _pelisEncontradas;*/
         }
 
         private void BuscarPorDirectorButton_Click(object sender, RoutedEventArgs e)
         {
-            _peliABuscar.Director = directorPeliABuscarTextBox.Text;
+            //_peliABuscar.Director = directorPeliABuscarTextBox.Text;
             
         }
 
         private void BuscarPeliPorAnioButton_Click(object sender, RoutedEventArgs e)
         {
 
-            anioPeliABuscarComboBox.DataSource = ;
+            //anioPeliABuscarComboBox.DataSource = ;
         }
 
         private void BuscarPeliPorGeneroButton_Click(object sender, RoutedEventArgs e)
         {
-            generoPeliABuscarComboBox.DataSourse = ;
+            //generoPeliABuscarComboBox.DataSourse = ;
         }
     }
 }
